@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in HTML</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            height: 5000px;
+        }
+        
+        header {
+            background-color: blueviolet;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        li#navbar {
+            display: inline;
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+        
+        .container {
+            background-color: aquamarine;
+            height: 50vh;
+            width: 50vh;
+            margin: auto;
+            position: relative;
+        }
+        
+        p {
+            text-align: center;
+            padding-right: 20%;
+        }
+        
+        .box {
+            text-align: center;
+            height: 40px;
+            width: 50px;
+            background-color: red;
+            color: white;
+            position: relative;
+            /* top: 30px; */
+            bottom: 100px;
+            left: 360px;
+        }
+        
+        .box2 {
+            position: absolute;
+            height: 30%;
+            width: 30%;
+            background-color: brown;
+            left: 0;
+            bottom: 0;
+        }
+        
+        .box3 {
+            position: absolute;
+            bottom: 3%;
+            right: 3%;
+            height: 50px;
+            width: 50px;
+            background-color: rgb(229, 54, 197);
+        }
+        
+        .box4 {
+            position: fixed;
+            width: 200px;
+            height: 300px;
+            background-color: greenyellow;
+            bottom: 20px;
+            right: 20px;
+            z-index: 95;
+        }
+        
+        .head {
+            text-align: center;
+            margin: auto;
+            width: 80%;
+            background-color: black;
+            color: white;
+        }
+        
+        .white {
+            position: absolute;
+            bottom: 10px;
+            left: 10%;
+            background-color: white;
+            height: 90%;
+            width: 80%;
+        }
+        
+        ul#list {
+            background-color: coral;
+        }
+        
+        li {
+            list-style: square inside url(images/check\ \(1\).png);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="navbar">Home</li>
+                <li id="navbar">About</li>
+                <li id="navbar">Services</li>
+                <li id="navbar">Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas sunt dicta quisquam dolor ea quod eaque. Soluta veniam incidunt impedit aut vitae. Ducimus veniam saepe, quis dicta autem libero eligendi repudiandae! Aperiam, iusto rerum impedit
+            atque voluptatibus non nemo!</p>
+
+        <div class="box">
+            LIKE
+        </div>
+
+        <div class="box2">
+            I am box2
+        </div>
+        <div class="box3">
+            I am box3
+        </div>
+
+        <div class="box4">
+            <div class="head">
+                Chat with Us
+            </div>
+            <div class="white">
+
+            </div>
+        </div>
+
+        <ul id="list">
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Oranges</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

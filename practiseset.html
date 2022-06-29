@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS : Chapter 5 Practise Set</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            min-height: 4000px;
+            background-color: greenyellow;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 99;
+            background-color: darkmagenta;
+            color: white;
+            padding: 10px;
+        }
+        
+        ul {
+            margin-left: 30px;
+        }
+        
+        li#navbar {
+            font-size: 3vw;
+            margin: 2%;
+            display: inline;
+        }
+        
+        .list1 {
+            list-style: circle inside;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="navbar">Home</li>
+                <li id="navbar">About</li>
+                <li id="navbar">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <p>Question 1: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, iure!</p>
+            <ul class="list1">
+                <li>Option A</li>
+                <li>Option B</li>
+                <li>Option C</li>
+                <li>Option D</li>
+            </ul>
+        </div>
+    </main>
+
+</body>
+
+</html>
